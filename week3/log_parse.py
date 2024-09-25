@@ -1,3 +1,7 @@
+# Andy J Theriault
+# ISS212
+# Week 3 Assignment 2
+
 #This script reads logs, filters threats, then displays the results.
 
 def read_log(file_path):
@@ -16,11 +20,11 @@ def filter_threats(log_lines):
     return suspicious_entries
 
 #Crudely strip characters away from the results to save the IP addresses.
-#def extractIP(threats):
-#    ips=[]
-#    for result in threats:
-#        ips.append(result[:16])
-#    return ips
+def extractIP(threats):
+    ips=[]
+    for result in threats:
+        ips.append(result[:16])
+    return ips
 
 def display_results(threats):
     #display each threat identified
@@ -33,7 +37,7 @@ if __name__ == "__main__":
     log_file = 'access.log'
     log_data = read_log(log_file)
     threats = filter_threats(log_data)
-    #extracted=extractIP(threats)
-    #display_results(extracted)
-    display_results(threats)
+    extracted=extractIP(threats)
+    display_results(extracted)
+    #display_results(threats)
 
