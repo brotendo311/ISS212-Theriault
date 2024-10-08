@@ -1,7 +1,11 @@
 # Author : Andy Theriault
-# Copied from Scenario 4
+# Code adapted from walkthrough
 
+
+# I commented out my function that I used to establish which years would work for the assignment
 #def pcycle(year):
+
+#gather input from user.
 year = int(input("Enter the year to check the patch cycle: "))
 if year < 2000:
 	print("Not within the managed patch period.")
