@@ -1,5 +1,10 @@
 #!/bin/bash
+# Author : Andy Theriault
+# Adapted from walkthrough
+# Assignment 3  - Bash Segment
+
 #BLOCK 1:
+#Packet size analysis
 read -p "Enter the packet size in bytes: " packet_size
 if [ "$packet_size" -ge 100 ]; then
     echo "True - Packet meets the threshold for analysis."
@@ -30,6 +35,7 @@ if [ "$tax" -lt 0 ]; then
     tax=0
 fi
 echo "Your Data Security Tax is: $tax MB"
+
 
 #BLOCK4 : Patch Cycle Determination
 read -p "Enter the year to check the patch cycle: " year
