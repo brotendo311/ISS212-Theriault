@@ -1,0 +1,71 @@
+==> bash-if_elif.sh <==
+#!C:\Program Files\Git\bin\sh.exe
+# Andy Theriault - 10.16.2024
+# ISS 212 CS Scripting - WK 5 - Bash Review
+# Script checks if input is a file or directory.
+# usage:
+#      for directory:  bash bash-if_elif.sh "C:\Your\directory\path\"
+#      for file:  bash bash-if_elif.sh "C:\Path\to\your\file\filename.extension"
+
+USER_INPUT="$1"
+#if null then output error message.
+
+==> bash-pingScript.sh <==
+#!C:\Program Files\Git\bin\sh.exe
+
+# ISS 212 CS Scripting - WK 5 - Bash Review
+# This script will ping any address provided as an argument.
+# usage: bash bash-pingScript.sh <IP Address Here, sans brackets.>
+
+SCRIPT_NAME="${0}"
+TARGET="${1}"
+
+echo "Running the script ${SCRIPT_NAME}..."
+
+==> bash-rev1.sh <==
+#!C:\Program Files\Git\bin\sh.exe
+
+# ISS 212 CS Scripting - WK 5 - Bash Review
+# Bash Script that takes input from the user and outputs a string using 2 inputs
+# Takes input from the user and assigns to variables.
+
+echo "What is your first name?"
+read -r firstname
+
+echo "What is your last name?"
+
+==> psFunc-SE.ps1 <==
+<#
+.DESCRIPTION
+# Add {Andy Theriault} and {10/15/2024} to the first comment line.
+ISS 212 - CS Scripting - PowerShell Script to Parse Windows Event System logs for Error events.
+
+# Purpose: To read from the Windows Event Log, determine if there are more than a certain number of error events,
+           and write the result to a text file.
+Citation: This script utilizes PowerShell cmdlets and Windows Event Log management, concepts based on ISS 212
+           Week 5 course material.
+
+
+==> psScriptTemp-1.ps1 <==
+﻿<# 
+.DESCRIPTION
+Add {Andy Theriault} and {10/15/2024} to the first comment line.
+ISS 212 - CS Scripting - PowerShell Script Template
+psScriptTemp-1.ps1
+Citations:
+
+.PURPOSE
+The purpose of this PowerShell script template is to provide a structured foundation
+for creating a more comprehensive script. It outlines the key elements and structures commonly used in
+
+==> psSecScript.ps1 <==
+<#
+.DESCRIPTION
+Andy Theriault - 10.15.2024
+ISS 212 PowerShell IOCs Script
+psSecScript.ps1
+
+.PARAMETER DirectoryPath
+The directory path to scan for potentially malicious files. "/home/juice/ISS/ISS212-Theriault/week5"
+
+.PARAMETER LogFile
